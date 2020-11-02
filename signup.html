@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Placement Cell-Signup</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+        <script>
+            var req;
+    function sendInfo(){
+        req = new XMLHttpRequest();
+        var v = document.forms["signup_form"]["n1"].value;
+        var url = "show.jsp?n1="+v;
+        
+        
+        try{
+            req.onreadystatechange = getInfo();
+            req.open("GET", url, true);
+            req.send();
+        }
+        catch(ex){
+            alert("Unable to connect to server!!"+ex);
+        }
+    }
+    function getInfo(){
+        if(req.readyState == 4 && req.status== 200){
+            var val = req.responseText;
+            document.getElementById("a1").style.color = "red";
+            document.getElementById("a1").innerHTML = val;
+        }
+    }
+</script>
+</head>
+<body>
+<img src="img/united.jpg" style="opacity: 0.3; position: absolute; background-position: center; height: 100%; width: 100%;"  class="bg">
+<div id="header">
+	<h1>Placement Cell</h1>
+	<img src="img/logo.png" class="logo">
+	<img src="img/ugi.png" class="ugi">
+</div>
+<div id="menu-bar">
+	<div class="menu-btn"><a href="index.html">Home</a></div>
+	<div class="menu-btn-1">
+		<span>Company</span>
+		<div class="content">
+			<p><a href="before_login.html" class="drop">Visited Companies</a></p>
+			<p><a href="before_login.html" class="drop">Upcoming Companies</a></p>
+			<p><a href="before_login.html" class="drop">Top Companies</a></p>
+			<p><a href="before_login.html" class="drop">High Package Companies</a></p>
+		</div>
+	</div>
+	<div class="menu-btn-1">
+		<span>Training</span>
+		<div class="content">
+			<p><a href="before_login.html" class="drop">PI Questions</a></p>
+			<p><a href="before_login.html" class="drop">Written Exam</a></p>
+			<p><a href="before_login.html" class="drop">Resume Samples</a></p>
+		</div>
+	</div>
+	<div class="menu-btn"><a href="about.html">About-us</a></div>
+	<div class="menu-btn"><a href="login.html">Login</a></div>
+</div>
+<hr size="5px" style="background-color: deepskyblue; border-color: navy">
+<div >
+    <form class="signup-box" action="save.jsp" method="post" name="signup_form">
+		<fieldset >
+			<legend class="field-box-head">Signup </legend>
+			<label class="field-item">Name <span style="color: red;">*</span></label>
+			<input class="entry" type="text" name="n1"  onkeyup="sendInfo();" required=""><span id="a1"></span><br><br>
+			<label class="field-item">Email <span style="color: red">*</span> </label>
+                        <input class="entry" type="email" name="e1" id="e2" required=""><br><br>
+			<label class="field-item">Mobile No. <span style="color: red;">*</span></label>
+			<input class="entry" type="number" name="m1" required=""><br><br>
+			<label class="field-item">Password <span style="color: red">*</span></label>
+			<input class="entry" type="password" name="p1" required=""><br><br>
+			<label class="field-item">College Name</label>
+                        <input class="entry" type="text" name="c1"><br><br>
+			<label class="field-item">College Id</label>
+                        <input class="entry" type="text" name="id1"><br><br>
+			<input type="submit" name="" value="Signup" class="submit">
+			<span class="note"><em>fields with * are mandatory</em></span>
+		</fieldset>
+	</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+	padding: 0;
+	margin: 0;
+        
+}
+body{
+	background-color: black;
+}
+#header{
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	width: 100%;
+	height: 102px;
+	background-color: white;
+	color: #082340;
+	text-align: center;
+	}
+#menu-bar{
+	width: 100%;
+	height: 45px;
+	float: left;
+	background-color: #F17A7E;
+	}
+.menu-btn{
+	width: 20%;
+	height: 50px;
+	font-size: 20px;
+	position: relative;
+	top: 13px;
+	float: left;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	}
+.menu-btn-1{
+	width: 20%;
+	height: 50px;
+	font-size: 20px;
+	position: relative;
+	top: 13px;
+	float: left;
+	text-align: center;
+	color: white;
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	}
+
+.content{
+	display: none;
+	max-width: 210px;
+	padding: 15px 10px;
+	background-color: mediumseagreen;
+	position: relative;
+	left: 20%;
+        border-radius: 20px;
+        z-index: 10;
+	text-align: left;
+	}
+.menu-btn-1:hover .content{
+	display: block;
+	color: black;
+	}
+h1{
+	position: relative;
+	top: 30px;
+	}
+a{
+	text-decoration: none;
+	color: white;
+	}
+.drop{
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	}
+.ugi{
+	position: relative; 
+	height: 100px; 
+	width: 200px;
+	left: 35%;  
+	bottom: 93px; 
+	margin:0;
+	}
+.logo{
+	position: relative; 
+	height: 150px; 
+	width: 200px;
+	right: 35%; 
+	bottom: 60px; 
+	margin: 0;
+	}
+.signup-box{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 4rem;
+	}
+fieldset{
+	width: 500px;
+	height: 450px;
+	border: 2px solid #F17A7E;
+	}
+.field-box-head{
+	font-size: 30px;
+	color: deepskyblue;
+	margin-left: 25px;
+	padding: 5px;
+}
+.field-item{
+	font-size: 25px;
+	color: #F17A7E;
+	position: relative;
+	top: 1rem;
+	left: 2rem;
+	font-weight: bold;
+}
+.entry{
+	background: transparent;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	top: 1rem;
+	left: 5rem;
+	border-style: none;
+	border-bottom: 2px solid deepskyblue;
+	width: 200px;
+	margin: 0 auto;
+}
+.submit{
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+        margin-left: 25%;
+	font-size: 20px;
+	height: 35px;
+	background-color: #F17A7E;
+	color: #000;
+	width: 50%;
+	font-weight: bold;
+        border-radius: 20px;
+        border: none;
+        font-family: timesnewroman;
+        cursor: pointer;
+}
+.submit:hover{
+    color: #F17A7E;
+    background-color: transparent;
+    border: 2px dotted #F17A7E;
+}
+a:hover{
+    color: black;
+}
+.note{
+	color: white;
+	position: relative;
+	left: 19rem;
+	top: .8rem;
+}

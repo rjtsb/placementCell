@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+        margin: 0;
+}
+body{
+	background-color: black;
+        position: fixed;
+        overflow: visible;
+}
+#header{
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	width: 100%;
+        height: 102px;
+	background-color: white;
+	color: #082340;
+	text-align: center;
+}
+.bg{
+	
+	opacity: 0.4; 
+	position: absolute; 
+	height: 100%; width: 100%;
+        background-image: url("img/united.jpg");
+	background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+	background-color: white;
+}
+#menu-bar{
+	width: 100%;
+	height: 45px;
+	float: left;
+	background-color: #F17A7E;
+}
+.menu-btn{
+	width: 20%;
+	height: 50px;
+	font-size: 20px;
+	position: relative;
+	top: 13px;
+	float: left;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.menu-btn-1{
+	width: 20%;
+	height: 50px;
+	font-size: 20px;
+	position: relative;
+	top: 13px;
+	float: left;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.content{
+	display: none;
+	max-width: 210px;
+	padding: 15px 5px 10px 15px;
+	color: white;
+	position: relative;
+	left: 25%;
+	text-align: left;
+	background-color: mediumseagreen;
+        border-radius: 20px;
+        z-index: 10;
+}
+.menu-btn-1:hover .content{
+	display: block;
+	color: black;
+}
+
+h1{
+	position: relative;
+	top: 30px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+    color: black;
+}
+.drop{
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+#divider{
+	width: 1px;
+	height: 480px;
+	position: relative;
+	top: 30px;
+	left: 70%;
+	background-color: deepskyblue;
+	border-color: deepskyblue;
+}
+#left-content{
+	float: left;
+	width: 66%;
+	height: 410px;
+	position: absolute;
+	left: 35px;
+	top: 210px;
+	border: 2px solid #F17A7E;
+}
+.left-content-1{
+	color:white; 
+	top: 40px; 
+	position: relative; 
+	font-size: 20px; 
+	margin: 20px;
+	line-height: 35px;
+}
+#right-content{
+	margin: auto;
+	float: right;
+	width: 25%;
+	height: 410px;
+	position: absolute;
+	left: 72%;
+	top: 210px;
+	border: 2px solid #F17A7E;
+}
+#box-heading{
+	color: deepskyblue;
+	margin: -10px 30px;
+	font-family: timesnewroman;
+}
+#footer{
+	color: #fff;
+	background-color: #000;
+	bottom: 0px;
+        left: 0;
+        padding: 10px 0;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+#img{
+	width: 100%;
+}
+.img-1{
+	height: 80px;
+	width: 100px;
+	position: relative;
+	left: 30px;
+	margin: 5px 5px;
+}
+.ugi{
+	position: relative; 
+	height: 100px; 
+	width: 200px;
+	left: 35%;  
+	bottom: 93px; 
+	margin:0;
+}
+.logo{
+	position: relative; 
+	height: 150px; 
+	width: 200px;
+	right: 35%; 
+	bottom: 60px; 
+	margin: 0;
+}
+.label{
+    margin: -10px 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    text-align: right;
+    display: none;
+}
+#toggle{
+    display: none;
+}
+.content-2{
+    left: 60px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .ugi{
+        display: none;
+    }
+    .menu-btn, .menu-btn-1{
+        display: block;
+        line-height: 70px;
+        clear: both;
+        text-align: center;
+        border-bottom: 2px solid red;
+        width: 100%;
+        display: none;
+    }    
+    .label{
+        display: block;
+        cursor: pointer;
+    }
+    #toggle:checked + .menu-btn{
+        display: block;
+    }
+    #divider{
+        display: none;
+    }
+    #left-content, #left-content-1{
+        margin: 0;
+        width: 100%;
+        border: none;
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    
+    #right-content{
+        clear: both;
+        float: left;
+        width: 90%;
+        border: 2px solid #F17A7E;
+        position: relative;
+    }
+    .content-2{
+        left: 10px;
+    }
+}

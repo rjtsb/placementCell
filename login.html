@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Placement Cell-Login</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+<img src="img/united.jpg" style="opacity: 0.3; position: absolute; background-position: center; height: 100%; width: 100%;">
+<div id="header">
+	<h1>Placement Cell</h1>
+	<img src="img/logo.png" style="position: relative; height: 150px; width: 200px;right: 35%; bottom: 60px; margin: 0;">
+	<img src="img/ugi.png" style="position: relative; height: 100px; width: 200px;left: 35%;  bottom: 93px; margin:0;">
+</div>
+<div id="menu-bar">
+	<div class="menu-btn"><a href="index.html">Home</a></div>
+	<div class="menu-btn-1">
+		<span>Company</span>
+		<div class="content">
+			<p><a href="before_login.html" class="drop">Visited Companies</a></p>
+			<p><a href="before_login.html" class="drop">Upcomming Companies</a></p>
+			<p><a href="before_login.html" class="drop">Top Companies</a></p>
+			<p><a href="before_login.html" class="drop">High Package Companies</a></p>
+		</div>
+	</div>
+	<div class="menu-btn-1">
+		<span>Training</span>
+		<div class="content">
+			<p><a href="before_login.html" class="drop">PI Questions</a></p>
+			<p><a href="before_login.html" class="drop">Written Exam</a></p>
+			<p><a href="before_login.html" class="drop">Resume Samples</a></p>
+		</div>
+	</div>
+	<div class="menu-btn"><a href="about.html">About-us</a></div>
+	<div class="menu-btn"><a href="signup.html">Signup</a></div>
+</div>
+<hr size="5px" style="background-color: deepskyblue; border-color: navy">
+<div id="left-login">
+    <form action="login.jsp" method="post">
+		<fieldset>
+			<legend style="margin-left: 20px; font-size: 30px; color: deepskyblue;">Login</legend>
+			<label>Email Id <span style="color: red">*</span></label><input type="email" name="e1" required=""><br>
+			<label>Password <span style="color: red">*</span> </label><input type="password" name="p1" required=""><br>
+			<input type="submit" name="" value="Login!" class="submit">
+			<input type="button" name="" value="Forget Password?" class="submit forget">
+			<span style="color: white; float: right; margin: 20px 10px 0 0;"><em>field with * are mandatory</em></span>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>
